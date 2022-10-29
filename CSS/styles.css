@@ -291,7 +291,7 @@ li {
 }
 .is-hidden {
   visibility: hidden;
-  transform: translateY(100%);
+  transform: translateY(-500%);
 }
 .modal {
   position: absolute;
