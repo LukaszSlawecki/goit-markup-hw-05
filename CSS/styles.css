@@ -290,6 +290,7 @@ li {
   transition: 0.25s;
 }
 .is-hidden {
+  visibility: hidden;
   transform: translateY(100%);
 }
 .modal {
