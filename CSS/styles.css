@@ -279,9 +279,8 @@ li {
   border: 0px;
 }
 .backdrop {
-  position: absolute;
+  position: fixed;
   display: flex;
-  justify-content: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -290,19 +289,17 @@ li {
   transition: 0.25s;
 }
 .is-hidden {
-  visibility: hidden;
   transform: translateY(100%);
 }
 .modal {
   position: absolute;
   width: 528px;
   height: 581px;
-  top: 221px;
-  bottom: 221px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  position: relative;
 }
 .modal-btn {
   cursor: pointer;
