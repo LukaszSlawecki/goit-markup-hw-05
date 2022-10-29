@@ -248,6 +248,19 @@ li {
 }
 .bluelink-active {
   color: var(--blue);
+  position: relative;
+}
+.bluelink-active::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 51px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blue);
+  cursor: unset;
+  pointer-events: none;
 }
 .header-address {
   color: var(--darkgrey);
